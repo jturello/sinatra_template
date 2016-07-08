@@ -1,14 +1,9 @@
-require('capybara/rspec')
-require('./app')
-Capybara.app = Sinatra::Application
-set(:show_exceptions, false)
+require('rspec')
+require('TEMPLATE')
 
-describe('STRING#TEMPLATE', {:type => :feature}) do
+describe('Fixnum#coin') do
+
   it('DOES SOMETHING...') do
-    visit('/')
-    fill_in('TEMPLATE', :with => 'SOMETHING')
-    click_button('Enter')
-    # save_and_open_page
-    expect(page).to have_content('SOME RESULT')
+    expect((X).TEMPLATE).to(eq(RESULT))
   end
 end
